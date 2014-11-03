@@ -15,6 +15,7 @@ gem 'pg'
 gem 'simple_form'
 
 gem 'flickraw'
+gem 'will_paginate-bootstrap'
 gem "flickr-objects"
 gem 'simple_oauth', '=0.2.0'
 
