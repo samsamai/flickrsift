@@ -18,6 +18,7 @@ gem 'flickraw'
 gem 'will_paginate-bootstrap'
 gem "flickr-objects"
 gem 'simple_oauth', '=0.2.0'
+gem 'colorbox-rails'
 
 group :development do
   gem 'better_errors'

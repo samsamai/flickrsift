@@ -28,5 +28,15 @@ feature 'Home page' do
     expect(page).to have_selector("ul.pagination")
   end
   
+  scenario "User serches and clicks on a photo" do
+    visit root_path
+  
+    fill_in "keywords", with: "best2014"
+    click_button "Search"
+    # page.first('.item > a').click
+    # click_link('.item > a')
+    page.first('.item').first('a').click
+    # expect(page).to have_selector("div#cboxOverlay")
+  end
 
 end
