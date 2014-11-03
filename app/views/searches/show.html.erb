@@ -4,10 +4,13 @@
   <%= form_tag("/search", method: "get", class: "form-inline") do %>
     <%= label_tag(:keywords, "") %>
     <%= text_field_tag(:keywords, @keywords, class: "form-control") %>
-    <%= submit_tag("Search", class: "btn btn-primary") %>
+    <%= submit_tag("Search", class: "btn btn-primary", :onclick => "$('#loading-indicator').show();") %>
   <% end %>
   </div>
 </div>
+
+<!-- Show the loading bar while searching -->
+<%= image_tag("ajax-loader.gif", id: "loading-indicator", style: "display:none") %>
 
 <!-- The results of the search are displayed below -->
 <%= render "search_results"%>
