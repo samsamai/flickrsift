@@ -13,6 +13,11 @@ gem 'bootstrap-sass'
 gem 'high_voltage'
 gem 'pg'
 gem 'simple_form'
+
+gem 'flickraw'
+gem "flickr-objects"
+gem 'simple_oauth', '=0.2.0'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
