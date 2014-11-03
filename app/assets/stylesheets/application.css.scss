@@ -13,6 +13,13 @@
  *= require_tree .
  *= require_self
  *= require colorbox-rails
+ *= require 'masonry/basic'
+ *= require 'masonry/centered'
+ *= require 'masonry/fluid'
+ *= require 'masonry/gutters'
+ *= require 'masonry/infinitescroll'
+ *= require 'masonry/right-to-left'
+ *= require 'masonry/transitions'
 */
 
 
@@ -35,13 +42,27 @@
   margin-bottom: 25px;
 }
 
-.item {
-  float:left;
-  margin:10px;
-}
-
 #fs_pagi {
   clear:both;
   display:table; 
   margin:0 auto;
+}
+
+.fs_thumbnail img{
+  margin:10px;
+}
+
+.item {
+  width:21.5%;
+}
+
+#images_container {
+  background: #FFF;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  clear: both;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
 }

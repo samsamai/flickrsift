@@ -15,4 +15,7 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require colorbox-rails
+//= require masonry/jquery.masonry
+//= require masonry/box-maker
+//= require masonry/jquery.loremimages.min
 //= require_tree .
