@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+
+
+#logo{
+  min-height:40px;
+  a {
+    color:white;
+    font-size:200%;
+  }
+}
+
+#fs_menus {
+  float:right;
+}
+
+#search-box {
+  display:table; 
+  margin:0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}

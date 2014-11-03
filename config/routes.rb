@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  root to: 'visitors#index'
+  root to: 'searches#show'
+  match '/search', to: "searches#show", via: 'get'
 end
