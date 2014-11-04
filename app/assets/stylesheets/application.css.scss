@@ -33,6 +33,7 @@
 
 #fs_menus {
   float:right;
+  font-size: 120%;
 }
 
 #search-box {
@@ -65,4 +66,14 @@
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
+}
+
+footer nav {
+  border-radius:0px !important;
+}
+
+#fs_copyright {
+  text-align: center;
+  color: rgb(158, 157, 157);
+  margin-top: 15px;
 }
