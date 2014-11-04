@@ -16,6 +16,10 @@ This application requires:
 - Ruby 2.1.2
 - Rails 4.1.4
 
+Demo
+----
+
+[https://pacific-scrubland-2014.herokuapp.com/](https://pacific-scrubland-2014.herokuapp.com/)
 
 Credits
 -------
