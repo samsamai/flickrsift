@@ -1,0 +1,41 @@
+<% if @photos%>
+  <!-- Use JQuery Masonary to make nice tiles -->
+  <%= javascript_tag do %>
+  $(function(){
+    $('#images_container').hide();
+    $('#loading-indicator').show();
+    var $container = $('#images_container').masonry();
+  
+    // initialize Masonry after all images have loaded
+    $container.imagesLoaded( function() {
+      $('#loading-indicator').hide();
+      $('#images_container').show();
+      $container.masonry({
+        columnWidth: 250, 
+        itemSelector: '.item',
+        gutterWidth: 5,
+        isFitWidth: true
+      });
+    });
+  });
+  <% end %>
+
+  <p id="search_results">
+    <div id="images_container" class="fs_thumbnail transitions-enabled centered clearfix">
+        <!-- Loop the photos list and display each one -->
+        <% @photos.each do |photo| %>
+          <div class='item'>
+            <%= link_to image_tag( FlickRaw.url_n(photo)), FlickRaw.url_b(photo), :data => { :colorbox => true }   %>  
+          </div>
+        <% end %>
+    </div>
+  </p>
+
+<!-- Show pagination -->
+<div style="width:100%">
+  <div id="fs_pagi">
+    <%= will_paginate @photos,renderer: BootstrapPagination::Rails if @photos %>
+  </div>
+</div>
+
+<% end %>
