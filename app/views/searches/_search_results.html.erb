@@ -1,4 +1,8 @@
-<% if @photos%>
+<% if @photos.empty?%>
+  <p id="search_results" style="text-align:center">
+      No results found.
+  </p>
+<% else %>
   <!-- Use JQuery Masonary to make nice tiles -->
   <%= javascript_tag do %>
   $(function(){
